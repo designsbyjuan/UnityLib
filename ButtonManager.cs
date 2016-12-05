@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -22,7 +22,6 @@ public class ButtonManager : MonoBehaviour {
 	void Update()
   {
     manageSkyboxButtonState();
-
 	}
   
   void manageSkyboxButtonState()
@@ -40,7 +39,6 @@ public class ButtonManager : MonoBehaviour {
         text = buttons[i].transform.GetChild(0).GetComponent<Text>();
         text.fontStyle = FontStyle.Bold;
         text.fontSize = fontSizeSelected;
-
       }
       else
       {
@@ -48,7 +46,6 @@ public class ButtonManager : MonoBehaviour {
         text = buttons[i].transform.GetChild(0).GetComponent<Text>();
         text.fontStyle = FontStyle.Normal;
         text.fontSize = fontSize;
-
       }
     }
   }
