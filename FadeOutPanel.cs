@@ -20,4 +20,5 @@ public class FadeOutPanel : MonoBehaviour {
     // destroy clone when fade has ended
     Destroy(fadePanel, fadeTime);
   }
+  
 }
