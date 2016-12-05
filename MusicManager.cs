@@ -12,12 +12,12 @@ public class MusicManager : MonoBehaviour {
     DontDestroyOnLoad(gameObject);
   }
 
-	// Use this for initialization
+  // Use this for initialization
   void Start () {
     audioSource = GetComponent<AudioSource>();
     audioSource.clip = levelMusicArray[0];
     audioSource.Play();
-	}
+  }
 
   public void PlayAudioClip(int audioTrack)
   {
