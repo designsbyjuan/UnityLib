@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -19,12 +19,11 @@ public class ButtonEventTrigger : MonoBehaviour {
     fadePanel = overlayCanvas != null ? overlayCanvas.GetComponent<FadeOutPanel>() : null;
   }
 
-	// Use this for initialization
-	protected virtual void Start () 
+  // Use this for initialization
+  protected virtual void Start () 
   {
     myButton = GetComponent<Button>();
-	  EventTrigger trigger = GetComponent<EventTrigger>();
-    
+    EventTrigger trigger = GetComponent<EventTrigger>();
     EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
     pointerEnter.eventID = EventTriggerType.PointerEnter;
     pointerEnter.callback.AddListener( ( data ) => { OnPointerEnterDelegate( (PointerEventData)data ); } );
@@ -34,15 +33,13 @@ public class ButtonEventTrigger : MonoBehaviour {
     pointerDown.eventID = EventTriggerType.PointerDown;
     pointerDown.callback.AddListener( ( data ) => { OnPointerDownDelegate( (PointerEventData)data ); } );
     trigger.triggers.Add( pointerDown );
-
-	}
+  }   
 
   protected virtual void OnPointerEnterDelegate(PointerEventData data)
   {
     if (myButton.interactable && manager)
     {
       manager.PlayAudioClip(1);
-
     }
   }
 
