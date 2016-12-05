@@ -1,5 +1,5 @@
 # UnityLib
-Collection of Unity scripting samples.
+Collection of Unity C# script samples.  
 
 # Author Information
 Name: Juan Mendiola
