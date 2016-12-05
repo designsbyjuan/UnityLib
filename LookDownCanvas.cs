@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections;
 using VRStandardAssets.Utils;
@@ -12,19 +12,19 @@ public class LookDownCanvas : MonoBehaviour {
   public float UIHeight = -400f;
   public float UIRotation = 65f;
 
-	// Use this for initialization
-	void Start () {
+  // Use this for initialization
+  void Start () {
     uiFader = GetComponent<UIFader>();
     canvasGroup = GetComponent<CanvasGroup>();
     main = FindObjectOfType<CardboardMain>();
-	}
+  }
 
-	// Update is called once per frame
-	void Update()
+  // Update is called once per frame
+  void Update()
   {
     // checks if canvas should follow player
     StartCoroutine(FollowPlayer());
-	}
+  }
 
   IEnumerator FollowPlayer()
   {
@@ -57,4 +57,5 @@ public class LookDownCanvas : MonoBehaviour {
     StartCoroutine(uiFader.FadeOut());
     canvasGroup.interactable = false;
   }
+	
 }
