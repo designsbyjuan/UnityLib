@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections;
 using VRStandardAssets.Utils;
@@ -14,9 +14,9 @@ public class LookDownCanvas : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-    uiFader = GetComponent<UIFader>();
-    canvasGroup = GetComponent<CanvasGroup>();
-    main = FindObjectOfType<CardboardMain>();
+		uiFader = GetComponent<UIFader>();
+		canvasGroup = GetComponent<CanvasGroup>();
+		main = FindObjectOfType<CardboardMain>();
 	}
 	
 	// Update is called once per frame
