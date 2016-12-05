@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -13,7 +13,7 @@ public class MusicManager : MonoBehaviour {
   }
 
 	// Use this for initialization
-	void Start () {
+  void Start () {
     audioSource = GetComponent<AudioSource>();
     audioSource.clip = levelMusicArray[0];
     audioSource.Play();
