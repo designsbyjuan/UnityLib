@@ -13,7 +13,7 @@ public class LookDownCanvas : MonoBehaviour {
   public float UIRotation = 65f;
 
 	// Use this for initialization
-	void Start () {
+  void Start () {
 		uiFader = GetComponent<UIFader>();
 		canvasGroup = GetComponent<CanvasGroup>();
 		main = FindObjectOfType<CardboardMain>();
