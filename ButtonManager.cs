@@ -12,17 +12,17 @@ public class ButtonManager : MonoBehaviour {
   private SkyboxInfo[] skyboxInfo;
   private Text text;
 
-	// Use this for initialization
-	void Start()
+  // Use this for initialization
+  void Start()
   {
     skyboxInfo = viewManager.SkyboxList;
-	}
+  }
 	
-	// Update is called once per frame
-	void Update()
+  // Update is called once per frame
+  void Update()
   {
     manageSkyboxButtonState();
-	}
+  }
   
   void manageSkyboxButtonState()
   {
